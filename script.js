@@ -7,6 +7,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
     const gender = document.getElementById("gender").value; // Obtém o gênero
     const description = document.getElementById("description").value;
     const contactMethod = document.getElementById("contactMethod").value;
+   
 
     // Determina a saudação com base na seleção de gênero
     const salutation = gender === "feminino" ? "Prezada" : "Prezado";
@@ -15,7 +16,7 @@ document.getElementById("messageForm").addEventListener("submit", function(event
     const message = `
 ${salutation} ${clientName}, ${greeting}!
 
-Conforme conversamos pelo ${contactMethod}, o seu chamado foi registrado e a sua solicitação está sendo atendida por um de nossos analistas, em breve retornaremos um feedback. Segue abaixo a descrição de sua solicitação:
+Conforme conversamos pelo telefone, o seu chamado foi registrado e a sua solicitação está sendo atendida por um de nossos analistas, em breve retornaremos um feedback. Segue abaixo a descrição de sua solicitação:
 
 Descrição da Solicitação: ${description}
 
