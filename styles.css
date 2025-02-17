@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+pre {
+    background: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Para manter a formatação */
+    margin-bottom: 20px;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: auto; /* Ajusta a largura do botão de cópia */
+    margin: 0 auto;
+    display: block; /* Centraliza o botão */
+}
+
+.copy-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+footer a {
+    color: #007bff; /* Cor do link */
+    margin-left: 10px; /* Espaçamento entre o texto e o ícone */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
