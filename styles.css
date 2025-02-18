@@ -1,94 +1,141 @@
+/* Estilos Globais */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;  /* Cor de fundo azul claro */
     margin: 0;
     padding: 20px;
 }
 
+/* Container */
 .container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
 }
 
+/* Título */
 h1 {
     text-align: center;
     color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
+/* Labels */
 label {
-    display: block;
+    font-weight: 600;
     margin: 10px 0 5px;
+    display: block;
+    color: #555;
 }
 
+/* Campos de Entrada */
 input[type="text"],
 textarea,
 select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #333;
 }
 
+/* Área de Texto (Texto Gerado) */
+pre {
+    background: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Para manter a formatação */
+    word-wrap: break-word; /* Evita quebra de texto */
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botões */
 button {
     width: 100%;
-    padding: 10px;
-    background-color: #28a745;
+    padding: 12px;
+    background-color: #28a745; /* Cor do botão principal */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Efeito hover para o botão principal */
 }
 
-pre {
-    background: #f8f9fa;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    white-space: pre-wrap; /* Para manter a formatação */
-    margin-bottom: 20px;
+button:active {
+    background-color: #1e7e34; /* Efeito ativo para o botão principal */
 }
 
+/* Botão de Copiar Mensagem */
 .copy-button {
-    background-color: #007bff;
+    background-color: #007bff; /* Cor do botão de cópia */
     color: white;
     border: none;
-    border-radius: 4px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 12px 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s;
-    width: auto; /* Ajusta a largura do botão de cópia */
-    margin: 0 auto;
-    display: block; /* Centraliza o botão */
+    width: auto;
+    margin: 10px auto; /* Centraliza o botão */
+    display: block;
 }
 
 .copy-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
 }
 
+.copy-button:active {
+    background-color: #004085; /* Cor do botão ao clicar */
+}
+
+/* Rodapé */
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     color: #666;
+    font-size: 14px;
 }
 
 footer a {
-    color: #007bff; /* Cor do link */
-    margin-left: 10px; /* Espaçamento entre o texto e o ícone */
-    text-decoration: none; /* Remove o sublinhado */
+    color: #007bff;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Estilo para o botão de gerar mensagem */
+#messageForm button[type="submit"] {
+    background-color: #007bff; /* Cor do botão de gerar mensagem */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#messageForm button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor do botão de gerar mensagem ao passar o mouse */
 }

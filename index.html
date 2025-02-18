@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Mensagens</title>
+    
+    <!-- Estilos e Ícones -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
+
+    <audio autoplay loop>
+        <source src="/musica.mp3" type="audio/mp3">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+
+
+    <div class="caixa-foto">
+        <img src="./teste.jpeg" alt="Pizza">
+        <div class="mascara"></div>
+    </div>
+
+
+
+
     <div class="container">
         <h1>Gerador de Mensagens</h1>
+        
+        <!-- Formulário Principal -->
         <form id="messageForm">
             <label for="clientName">Nome do Cliente:</label>
             <input type="text" id="clientName" required>
@@ -32,22 +53,40 @@
 
             <label for="contactMethod">Método de Contato:</label>
             <input type="text" id="contactMethod" placeholder="Ex: Telefone, E-mail" required>
-
-            <button type="submit">Gerar Mensagem</button>
         </form>
 
+        <!-- Observações Internas -->
+        <h2>Observações Internas</h2>
+        <form id="internalNotesForm">
+            <label for="contact">Contato:</label>
+            <input type="text" id="contact" placeholder="Ex: 021995151715">
+
+            <label for="host">Host:</label>
+            <input type="text" id="host" placeholder="Ex: http://cartaodetodosmarica-19b098.vpn.ftec.us/escallo/admin/index.php?ftRouter=principal/listar">
+
+            <label for="serviceLink">Link do Atendimento:</label>
+            <input type="text" id="serviceLink" placeholder="Ex: https://futurotec-558260.i.ftec.us/escallo/historico/atendimento/?token=7bc5b9374264454831f4b1f37e6ad217">
+        </form>
+
+        <!-- Mensagem Gerada -->
         <h2>Mensagem Gerada:</h2>
         <pre id="generatedMessage"></pre>
         <button id="copyButton" class="copy-button">📋 Copiar Mensagem</button>
-
-        <footer>
-            <p>Desenvolvido por Miguel Silva ©</p>
-            <a href="https://linkedin.com/in/miguel-de-sá-silva-1bb59a28b/" target="_blank">
-                <i class="bi bi-linkedin" style="font-size: 24px;"></i>
-            </a>
-        </footer>
+        <button type="submit" form="messageForm">Gerar Mensagem</button>
     </div>
 
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por Miguel Silva ©</p>
+        <a href="https://linkedin.com/in/miguel-de-sá-silva-1bb59a28b/" target="_blank">
+            <i class="bi bi-linkedin" style="font-size: 24px;"></i>
+        </a>
+        <div class="text-center mt-3 text-sm text-gray-600">
+            <i class="fas fa-desktop"></i> Edição: Ftec Mensagens - Versão: 1.0.1
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
