@@ -1,141 +1,437 @@
-/* Estilos Globais */
+/* Estilos Globais Modernos */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e0f7fa;  /* Cor de fundo azul claro */
+    font-family: 'Poppins', 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
     margin: 0;
-    padding: 20px;
+    padding: 24px;
+    min-height: 100vh;
+    color: #23272f;
+    letter-spacing: 0.01em;
 }
 
 /* Container */
 .container {
     max-width: 700px;
-    margin: 30px auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 48px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(60, 80, 120, 0.13), 0 1.5px 4px rgba(60, 80, 120, 0.07);
+    font-size: 17px;
+    transition: box-shadow 0.3s, transform 0.2s;
+    backdrop-filter: blur(2px);
+}
+.container:hover {
+    box-shadow: 0 16px 48px rgba(60, 80, 120, 0.18), 0 2px 8px rgba(60, 80, 120, 0.10);
+    transform: translateY(-2px) scale(1.01);
 }
 
 /* Título */
 h1 {
+    font-family: 'Poppins', 'Inter', 'Segoe UI', Arial, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #1a237e;
+    margin-bottom: 36px;
     text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: bold;
+    text-shadow: 0 4px 16px rgba(26, 35, 126, 0.10);
+    line-height: 1.1;
 }
 
 /* Labels */
 label {
     font-weight: 600;
-    margin: 10px 0 5px;
+    margin: 0 0 7px 2px;
     display: block;
-    color: #555;
+    color: #374151;
+    letter-spacing: 0.5px;
+    font-size: 1.08em;
 }
 
-/* Campos de Entrada */
+/* Campos de Preenchimento estilo caixa moderna */
 input[type="text"],
 textarea,
 select {
     width: 100%;
-    padding: 12px;
+    min-height: 44px;
+    padding: 12px 16px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    font-size: 16px;
-    color: #333;
+    border: 1.5px solid #e0e7ef;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 1.08rem;
+    color: #23272f;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(60, 80, 120, 0.06);
+    letter-spacing: 0.01em;
+}
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #5b9df9;
+    background: #f7faff;
+    box-shadow: 0 4px 16px rgba(91, 157, 249, 0.10);
+}
+input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #b0b8c1;
+    opacity: 1;
+    font-size: 1.05rem;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.01em;
 }
 
 /* Área de Texto (Texto Gerado) */
 pre {
-    background: #f8f9fa;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    white-space: pre-wrap; /* Para manter a formatação */
-    word-wrap: break-word; /* Evita quebra de texto */
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #333;
+    background: linear-gradient(100deg, #f8f9fa 60%, #e3f0ff 100%);
+    padding: 20px;
+    border: 1.5px solid #b2ebf2;
+    border-radius: 9px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 26px;
+    font-size: 16px;
+    color: #23272f;
+    overflow-x: auto;
+    box-shadow: 0 1px 4px rgba(60, 80, 120, 0.04);
 }
 
-/* Botões */
+/* Botões Modernos */
 button {
     width: 100%;
-    padding: 12px;
-    background-color: #28a745; /* Cor do botão principal */
-    color: white;
+    padding: 16px;
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    transition: background 0.3s, box-shadow 0.2s, transform 0.1s;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 10px rgba(67, 233, 123, 0.08);
+    letter-spacing: 0.5px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
 }
-
 button:hover {
-    background-color: #218838; /* Efeito hover para o botão principal */
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+    box-shadow: 0 6px 20px rgba(67, 233, 123, 0.13);
+    transform: translateY(-1px) scale(1.01);
 }
-
 button:active {
-    background-color: #1e7e34; /* Efeito ativo para o botão principal */
+    background: linear-gradient(90deg, #11998e 0%, #38f9d7 100%);
+    transform: scale(0.98);
 }
 
 /* Botão de Copiar Mensagem */
 .copy-button {
-    background-color: #007bff; /* Cor do botão de cópia */
+    background: linear-gradient(90deg, #5b9df9 0%, #38f9d7 100%);
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 12px 20px;
+    border-radius: 9px;
+    padding: 16px 28px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
+    font-size: 19px;
+    font-weight: 700;
+    transition: background 0.3s, box-shadow 0.2s, transform 0.1s;
     width: auto;
-    margin: 10px auto; /* Centraliza o botão */
+    margin: 16px auto;
     display: block;
+    box-shadow: 0 2px 10px rgba(91, 157, 249, 0.08);
+    letter-spacing: 0.5px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 14px;
 }
-
 .copy-button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+    background: linear-gradient(90deg, #38f9d7 0%, #5b9df9 100%);
+    box-shadow: 0 6px 20px rgba(91, 157, 249, 0.13);
+    transform: translateY(-1px) scale(1.01);
 }
-
 .copy-button:active {
-    background-color: #004085; /* Cor do botão ao clicar */
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    transform: scale(0.98);
 }
 
-/* Rodapé */
+/* Botão destacado com ícone */
+button, .form-button {
+    width: 100%;
+    padding: 13px 0;
+    background: linear-gradient(90deg, #5b9df9 0%, #38f9d7 100%);
+    color: #23272f;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 700;
+    transition: background 0.3s, box-shadow 0.2s, transform 0.1s;
+    margin-bottom: 0;
+    box-shadow: 0 2px 8px rgba(91, 157, 249, 0.08);
+    letter-spacing: 0.5px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+button i, .form-button i {
+    font-size: 1.2em;
+}
+button:hover, .form-button:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #5b9df9 100%);
+    box-shadow: 0 6px 20px rgba(91, 157, 249, 0.13);
+    transform: translateY(-1px) scale(1.01);
+}
+
+/* Rodapé Moderno */
 footer {
     text-align: center;
-    margin-top: 30px;
-    color: #666;
-    font-size: 14px;
+    margin-top: 44px;
+    color: #7b8794;
+    font-size: 16px;
+    letter-spacing: 0.2px;
 }
-
 footer a {
-    color: #007bff;
+    color: #5b9df9;
     margin-left: 10px;
     text-decoration: none;
+    transition: text-decoration 0.2s, color 0.2s;
 }
-
 footer a:hover {
     text-decoration: underline;
+    color: #11998e;
 }
 
-/* Estilo para o botão de gerar mensagem */
+/* Botão de gerar mensagem */
 #messageForm button[type="submit"] {
-    background-color: #007bff; /* Cor do botão de gerar mensagem */
+    background: linear-gradient(90deg, #5b9df9 0%, #38f9d7 100%);
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 12px;
+    border-radius: 9px;
+    padding: 16px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
+    font-size: 19px;
+    font-weight: 700;
+    transition: background 0.3s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 10px rgba(91, 157, 249, 0.08);
+    letter-spacing: 0.5px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+#messageForm button[type="submit"]:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #5b9df9 100%);
+    box-shadow: 0 6px 20px rgba(91, 157, 249, 0.13);
+    transform: translateY(-1px) scale(1.01);
 }
 
-#messageForm button[type="submit"]:hover {
-    background-color: #0056b3; /* Cor do botão de gerar mensagem ao passar o mouse */
+/* Responsividade Aprimorada */
+@media (max-width: 900px) {
+    .container {
+        padding: 28px 8px;
+        max-width: 99vw;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding: 6px;
+    }
+    .container {
+        padding: 10px 2vw;
+        border-radius: 0;
+    }
+    button, .copy-button, #messageForm button[type="submit"] {
+        font-size: 16px;
+        padding: 11px;
+    }
+    pre {
+        font-size: 13px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Layout de Campos Lado a Lado */
+.form-row {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 0;
+}
+.form-row > div {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+.form-row label {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Animação de foco para campos de entrada */
+input[type="text"], textarea, select {
+    transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+}
+
+/* Foto destacada responsiva e moderna */
+.caixa-foto {
+    width: 100%;
+    max-width: 340px;
+    margin: 32px auto 18px auto;
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 32px rgba(60, 80, 120, 0.13), 0 1.5px 4px rgba(60, 80, 120, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.caixa-foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1.3/1;
+    border-radius: 18px;
+    transition: transform 0.3s;
+}
+.caixa-foto img:hover {
+    transform: scale(1.04) rotate(-1deg);
+}
+.caixa-foto .mascara {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.18) 100%);
+    pointer-events: none;
+    border-radius: 18px;
+}
+@media (max-width: 600px) {
+    .caixa-foto {
+        max-width: 98vw;
+        margin: 18px auto 10px auto;
+        border-radius: 10px;
+    }
+    .caixa-foto img, .caixa-foto .mascara {
+        border-radius: 10px;
+    }
+}
+
+/* Cards modernos centralizados estilo exemplo da imagem */
+.form-box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(60, 80, 120, 0.10);
+    padding: 28px 22px 22px 22px;
+    margin: 0 auto 28px auto;
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.form-box h2 {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: #23272f;
+    margin-bottom: 18px;
+    margin-top: 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 500px) {
+    .form-box {
+        max-width: 98vw;
+        padding: 16px 4vw 14px 4vw;
+        border-radius: 10px;
+    }
+    .form-box h2 {
+        font-size: 1.05rem;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    max-width: none !important;
+}
+
+select {
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1.5px solid #e0e7ef;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 1.08rem;
+    color: #23272f;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    letter-spacing: 0.01em;
+    /* appearance removido para manter seta nativa */
+}
+select:focus {
+    border-color: #3399ff;
+    box-shadow: 0 0 0 2px #b3d7ff;
+    background: #fff;
+}
+
+button, .form-button, .copy-button {
+    width: 100%;
+    padding: 13px 0;
+    background: #fff;
+    color: #23272f;
+    border: 1.5px solid #e0e7ef;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 700;
+    transition: background 0.3s, box-shadow 0.2s, color 0.2s, border-color 0.2s, transform 0.1s;
+    margin-bottom: 0;
+    box-shadow: 0 2px 8px rgba(91, 157, 249, 0.04);
+    letter-spacing: 0.5px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+button i, .form-button i, .copy-button i {
+    font-size: 1.2em;
+}
+button:hover, .form-button:hover, .copy-button:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #5b9df9 100%);
+    color: #fff;
+    border-color: #5b9df9;
+    box-shadow: 0 6px 20px rgba(91, 157, 249, 0.13);
+    transform: translateY(-1px) scale(1.01);
 }
